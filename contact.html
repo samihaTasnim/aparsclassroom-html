@@ -6,19 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact us | Apars Classroom</title>
 
+  <script type="text/javascript">
+    (function(c, l, a, r, i, t, y) {
+        c[a] = c[a] || function() {
+            (c[a].q = c[a].q || []).push(arguments)
+        };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "8jcf2l88zu");
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '593459298431756');
+    fbq('track', 'PageView');
+</script> <noscript><img height="1" width="1" style="display:none"   src="https://www.facebook.com/tr?id=593459298431756&ev=PageView&noscript=1" /></noscript>
+
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico">
   <link href="output.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/main.css">
-
+  <style>
+    .container-contact100 {
+        margin-top: 50px;
+    }
+    
+    .contact-wrap {
+        max-width: 800px;
+        background-color: rgb(28, 50, 39);
+        color: white;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 15px 15px rgba(78, 74, 74, 0.747);
+    }
+    
+    textarea {
+        resize: none;
+    }
+    
+    select {
+        margin-top: 10px;
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+    }
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" defer></script>
+<!-- Firebase Scripts -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js" defer></script>
 </head>
 
 <body>
   <nav class="bg-white shadow-xl">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="/" class="flex items-center">
-        <img src="assets/images/logo.png" class="h-8 mr-3" alt="Apars Classroom Logo" />
+        <img src="https://i.postimg.cc/1gVhT9Mr/logo.png" class="h-8 mr-3" alt="Apars Classroom Logo" />
       </a>
       <div class="flex md:order-2">
         <button type="button"
@@ -57,6 +122,164 @@
       </div>
     </div>
   </nav>
+
+  <!-- mridul vaiyar code copy -->
+
+  <div class="container-contact100">
+    <div class="container contact-wrap w-100 p-md-5 p-4 wrap-contact100">
+        <h3 class="mb-4">Reach Us</h3>
+        <form method="POST" autocomplete="off" id="contactform" name="contactform" class="contactform">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="label" for="name">Full Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="wrap-input100">
+                            <div class="label-input100">HSC Batch</div>
+                            <div>
+                                <select class="js-select2" id="HSC_Batch" name="HSC_Batch" required>
+                                    <option value="">Select you Batch</option>
+                                <option value="HSC-21">HSC'21</option>
+                                <option value="HSC-20">Admission</option>
+                                <option value="HSC-22">HSC'22</option>
+                                <option value="HSC-19">HSC'19</option>
+                                <option value="HSC-23">HSC'23</option>
+                                <option value="HSC-18">HSC'18</option>
+                                <option value="HSC-15">HSC'15</option>
+                                <option value="HSC-16">HSC'16</option>
+                                <option value="HSC-17">HSC'17</option>
+                                <option value="HSC-17">HSC'24</option>
+                                <option value="HSC-17">HSC'14</option>
+                                </select>
+                                <div class="dropDownSelect2"></div>
+                            </div>
+                            <span class="focus-input100"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="label" for="email">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="label" for="phone">Phone Number</label>
+                        <input type="number" class="form-control" name="phone" id="phone" placeholder="+8801XX XXX XXXX" required>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="Topic">Topic</label>
+                        <input type="text" class="form-control" name="Topic" id="Topic" placeholder="Topic">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="message">Message</label>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <textarea name="ip-details" id="ip-details" style="display: none;"></textarea>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="submit" id="submit" value="Send Message" class="btn btn-outline-light">
+                        <div class="submitting"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container">
+  <footer class="mt-12 md:mt-28  ">
+    <div class=" mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <a href="https://aparsclassroom.com/">
+            <img src="https://i.postimg.cc/1gVhT9Mr/logo.png" class="h-8 mr-3" alt="apars classroom Logo" />
+          </a>
+          <br>
+          <div class="self-center">
+            <address class="">
+              Flat- B1
+              House- 364
+              Road 5
+              Avenue 4
+              Mirpur DOHS, Dhaka
+            </address>
+            <br>
+            <p class="font-medium">Trade License Number : 283745</p>
+            <a href="tel:09639102552" class="text-blue-600 visited:text-purple-600">09639102552</a> <br>
+            <a href="mailto:support@aparsclassroom.com"
+              class="text-blue-600 visited:text-purple-600">support@aparsclassroom.com</a>
+          </div>
+
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Find us at
+            </h2>
+            <ul class="text-gray-500 font-medium">
+              <li><a href="https://www.facebook.com/aparsclassroom/" target="_blank">Facebook Page</a>
+              </li>
+              <li><a href="https://www.facebook.com/groups/aparsclassroom/" target="_blank">Facebook
+                  Group</a></li>
+              <li><a href="https://instagram.com/aparsclassroom" target="_blank">Instagram Account</a>
+              </li>
+              <li><a href="https://youtube.com/aparsclassroom">Youtube Channel</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">About</h2>
+            <ul class="text-gray-500 font-medium">
+              <li><a class="text-muted" href="/about-us.html">Team</a></li>
+              <li><a class="text-muted" href="https://goo.gl/maps/n2z2HRGN5MJPE6ZB6" target="_blank">Location</a></li>
+              <li><a class="text-muted" href="/privacy.html">Privacy</a></li>
+              <li><a class="text-muted" href="/terms.html">Terms</a></li>
+              <li><a class="text-muted" href="/return-and-refund-policy.html">Return and Refund
+                  Policy</a></li>
+              <li><a class="text-muted" href="/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <hr class="my-6 border-gray-600 sm:mx-auto lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-between">
+               <span class="text-sm text-gray-700 sm:text-center">© 2023 <a href="https://aparsclassroom.com/"
+                         class="hover:underline">Apars Classroom™</a>. All Rights Reserved.
+               </span>
+          </div> -->
+    </div>
+  </footer>
+</div>
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "455ce41f33324d9a9ad0a1d773908871"}'></script><
 </body>
+
+<script src="shuchipotro-assets/vendor/select2/select2.min.js" defer></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzmvkH2BEXhuLN_mk1FmWBOUESKNbp1PKCkcBWk8_fX3HkiMP7truSI/exec'
+    const form = document.forms['contactform']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => alert("Thanks for reaching us..! We Will Contact You Soon 🥰"))
+            .catch(error => console.error('Error!', error.message))
+        form.reset();
+        document.getElementById('submit').value = "Sending";
+        setTimeout(function() {
+            document.getElementById('submit').value = "Sent !";
+        }, 3000)
+    });
+</script>
 
 </html>
