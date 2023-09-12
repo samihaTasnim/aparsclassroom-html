@@ -20,3 +20,28 @@
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 }
+
+
+.background-color {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(211, 203, 203);
+}
+
+.background-color:before { 
+  content: '';
+  position: absolute;
+  left: 20%;
+  width: 100%; 
+  height: 210%; 
+  background-color: rgb(255, 255, 255); /* fallback */
+  background-color: rgba(62, 151, 220, 0.5);
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.colored-input {
+	background-color: rgb(211, 203, 203);
+}
